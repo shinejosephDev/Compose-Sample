@@ -30,9 +30,7 @@ class MainActivity2 : ComponentActivity() {
 
 @Composable
 fun MakeList() {
-    val listState = rememberLazyListState()
     LazyColumn(
-        state= listState,
         verticalArrangement = Arrangement.spacedBy(50.dp)
     ) {
         items(20) { index ->
